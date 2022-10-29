@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "description": "calculator project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H4ndm1x3r/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H4ndm1x3r/calculator/issues"
+  },
+  "homepage": "https://github.com/H4ndm1x3r/calculator#readme"
+}
