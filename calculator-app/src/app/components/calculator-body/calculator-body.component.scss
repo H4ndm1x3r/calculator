@@ -1,0 +1,18 @@
+@use "../../../assets/styles/variables.scss";
+
+.calculator-body {
+  &:host {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 variables.$calc-body-spacing variables.$calc-body-spacing;
+    background-color: #777;
+    height: calc(100% - 32px);
+    align-content: flex-start;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__wrapper {
+
+  }
+}

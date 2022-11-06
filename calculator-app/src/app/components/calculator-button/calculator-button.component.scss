@@ -1,0 +1,15 @@
+@use "../../../assets/styles/variables.scss";
+@use "sass:math";
+
+$calc-button-size: math.div(variables.$calc-width - (variables.$calc-body-spacing * 2), 4);
+
+.calculator-button {
+  &:host {
+    display: flex;
+    height: $calc-button-size;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}

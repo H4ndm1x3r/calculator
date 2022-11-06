@@ -1,0 +1,17 @@
+$calc-display-height: 80px;
+
+.calculator-display {
+  &:host {
+    background-color: white;
+    height: $calc-display-height;
+    margin: 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}

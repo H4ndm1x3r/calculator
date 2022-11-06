@@ -1,0 +1,10 @@
+@use "../../../assets/styles/variables.scss";
+
+:host {
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  width: variables.$calc-width;
+  height: variables.$calc-height;
+  border-radius: 16px;
+}

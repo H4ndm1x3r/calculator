@@ -2,10 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CalculatorBodyComponent, CalculatorButtonComponent, CalculatorComponent, CalculatorDisplayComponent, } from './components';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculatorComponent,
+    CalculatorDisplayComponent,
+    CalculatorBodyComponent,
+    CalculatorButtonComponent,
   ],
   imports: [
     BrowserModule

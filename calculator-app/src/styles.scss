@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: block;
+  margin: 0;
+  background-color: #FFF;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
