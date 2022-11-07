@@ -4,16 +4,16 @@
       {{ displayText }}
     </calculator-display>
     <calculator-body>
-      <button calculator-button key="1" (click)="buttonClick('1')"></button>
-      <button calculator-button key="2" (click)="buttonClick('2')"></button>
-      <button calculator-button key="3" (click)="buttonClick('3')"></button>
-      <button calculator-button key="4" (click)="buttonClick('4')"></button>
-      <button calculator-button key="5" (click)="buttonClick('5')"></button>
-      <button calculator-button key="6" (click)="buttonClick('6')"></button>
-      <button calculator-button key="7" (click)="buttonClick('7')"></button>
-      <button calculator-button key="8" (click)="buttonClick('8')"></button>
-      <button calculator-button key="9" (click)="buttonClick('9')"></button>
-      <button calculator-button key="0" (click)="buttonClick('0')"></button>
+      <calculator-button key="1" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="2" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="3" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="4" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="5" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="6" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="7" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="8" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="9" (keyEvent)="buttonClick($event)"></calculator-button>
+      <calculator-button key="0" (keyEvent)="buttonClick($event)"></calculator-button>
     </calculator-body>
   </calculator>
 </main>

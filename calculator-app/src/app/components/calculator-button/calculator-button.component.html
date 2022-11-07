@@ -1,3 +1,5 @@
-<span *ngIf="key">
-  {{ key }}
-</span>
+<button #calculatorButton [ngClass]="{'active': active }" (click)="clicked()">
+  <span *ngIf="key">
+    {{ key }}
+  </span>
+</button>

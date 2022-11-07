@@ -2,6 +2,7 @@ $calc-display-height: 80px;
 
 .calculator-display {
   &:host {
+    font-family: 'Courier New', Courier, monospace;
     background-color: white;
     height: $calc-display-height;
     margin: 16px;
