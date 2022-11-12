@@ -12,6 +12,12 @@ import {
   ViewChild
 } from '@angular/core';
 
+const specialKeyEvent: Record<string, string> = {
+  '=': 'shift.=',
+  'Clear': 'Escape',
+  'Delete': 'Backspace',
+}
+
 @Component({
   selector: '<calculator-button>',
   templateUrl: './calculator-button.component.html',
@@ -38,13 +44,17 @@ export class CalculatorButtonComponent implements OnInit, OnDestroy {
   ) {}
 
   public ngOnInit(): void {
-    this.keyUpListener = this.renderer.listen(window, `keyup.${this.key}`, () => {
+    const eventKey = specialKeyEvent[this.key] ? specialKeyEvent[this.key] : this.key;
+
+    this.keyUpListener = this.renderer.listen(window, `keyup.${eventKey}`, () => {
+      console.log(this.key);
+      
       this.active = false;
       this.cd.detectChanges();
       this.clicked();
     })
 
-    this.keyDownListener = this.renderer.listen(window, `keydown.${this.key}`, () => {
+    this.keyDownListener = this.renderer.listen(window, `keydown.${eventKey}`, () => {
       this.active = true;
       this.cd.detectChanges();
     })
